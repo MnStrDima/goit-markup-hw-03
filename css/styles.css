@@ -1,0 +1,307 @@
+/* цвет фона кнопки, ссылок в фокусе - #2196F3
+цвет фона страницы, текста героя, текста кнопки, подписи боксов в фокусе - #FFFFFF
+цвет описания функций, должностей в команде, контактов в хедере - #757575
+цвет текста заголовков, имен членов команды, ссылок навигации - #212121
+цвет части логотипа - #000000 
+цвет контактов в футере - rgba(255, 255, 255, 0.6); 
+цвет фона неактивных кнопок в фильтре портфолио, фона секции команды - #F5F4FA; */
+:root {
+  --button-background-links-color: #2196f3;
+  --body-background-button-font-color: #ffffff;
+  --features-header-contacts-color: #757575;
+  --headers-names-links-color: #212121;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --team-background-portfolio-filters-color: #f5f4fa;
+}
+
+/* свойства body */
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Свойства логотипа */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.logo .in-header {
+  color: #000000;
+}
+
+.logo .in-footer {
+  color: #ffffff;
+}
+/* Навигация сайта*/
+
+.site-navigation {
+  list-style-type: none;
+}
+.site-navigation .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--headers-names-links-color);
+}
+
+.site-navigation .link:hover,
+.site-navigation .link:focus {
+  color: var(--button-background-links-color);
+}
+
+.site-navigation .current {
+  color: var(--button-background-links-color);
+}
+
+/*Контакты в хедере*/
+
+.site-contacts {
+  list-style-type: none;
+}
+
+.site-contacts .link {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--features-header-contacts-color);
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+  color: var(--button-background-links-color);
+}
+/*Подвал страницы*/
+
+.address-links {
+  font-style: normal;
+  line-height: 1.71;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.address {
+  text-decoration: none;
+  color: var(--body-background-button-font-color);
+}
+
+.address-links .link {
+  text-decoration: none;
+  color: var(--footer-contacts-color);
+}
+
+.footer-text {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--body-background-button-font-color);
+}
+
+.footer.social-links {
+  list-style: none;
+  text-decoration: none;
+}
+.footer .social-links:hover,
+.footer .social-links:focus {
+  color: var(--button-background-links-color);
+}
+
+.developed-by {
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/*Кнопка*/
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.button.primary {
+  color: var(--body-background-button-font-color);
+  background-color: var(--button-background-links-color);
+}
+
+/*Герой*/
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* DELETE THIS AFTER MODIFICATION */
+  background-color: #000000;
+  /* DELETE THIS AFTER MODIFICATION */
+  color: var(--body-background-button-font-color);
+}
+
+/*Особенности*/
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--headers-names-links-color);
+}
+
+.section-title.invisible {
+  visibility: hidden;
+}
+
+.section-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--headers-names-links-color);
+}
+
+.section .features {
+  color: var(--features-header-contacts-color);
+}
+
+.section-subtitle.work {
+  color: var(--body-background-button-font-color);
+}
+
+.section-subtitle.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: none;
+  color: var(--headers-names-links-color);
+}
+
+.section-list {
+  list-style: none;
+}
+
+.section-list.link {
+  text-decoration: none;
+}
+
+.section-list.link:hover,
+.section-list.link:focus {
+  color: var(--button-background-links-color);
+}
+
+/*Наша команда*/
+
+.team-list {
+  list-style: none;
+}
+
+.mate {
+  list-style: none;
+}
+
+.social-links {
+  text-decoration: none;
+}
+
+.mate .social-links:hover,
+.mate .social-links:focus {
+  color: var(--button-background-links-color);
+}
+
+.position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--features-header-contacts-color);
+}
+
+/* DELETE THIS AFTER MODIFICATION */
+footer {
+  background-color: #000000;
+}
+/* DELETE THIS AFTER MODIFICATION */
+
+/*Фильтр*/
+
+.filter {
+  list-style: none;
+}
+
+.filter-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-color: transparent;
+  border-radius: 4px;
+  color: var(--headers-names-links-color);
+  background-color: var(--team-background-portfolio-filters-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--body-background-button-font-color);
+  background-color: var(--button-background-links-color);
+}
+
+/*Портфолио*/
+
+.main-title {
+  visibility: hidden;
+}
+
+.main-list {
+  list-style: none;
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.main-list .subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--headers-names-links-color);
+}
+
+.main-list .type {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--features-header-contacts-color);
+}
+
+.main-list .description {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--body-background-button-font-color);
+
+  /*DELETE THIS AFTER MODIFICATION*/
+  background-color: var(--button-background-links-color);
+  /*DELETE THIS AFTER MODIFICATION*/
+}
