@@ -271,7 +271,7 @@ footer {
 /*Портфолио*/
 
 .main-title {
-  visibility: hidden;
+  display: none;
 }
 
 .main-list {
