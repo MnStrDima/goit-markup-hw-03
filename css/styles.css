@@ -33,7 +33,7 @@ body {
   line-height: 1.19;
   color: #2196f3;
   text-decoration: none;
-  display: inline-block;
+  margin-right: 85px;
 }
 
 .logo .in-header {
@@ -49,8 +49,19 @@ body {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
 }
+
+.site-navigation .item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .site-navigation .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -69,10 +80,20 @@ body {
 
 /*Контакты в хедере*/
 
+.header-address {
+  margin-left: auto;
+}
+
 .site-contacts {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+.site-contacts > .item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .site-contacts .link {
@@ -133,7 +154,7 @@ body {
 
 /*Кнопка*/
 
-.button {
+.button.primary {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -141,13 +162,12 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-decoration: none;
+  box-sizing: border-box;
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
+  border: 1px solid transparent;
   border-radius: 4px;
-}
-
-.button.primary {
   color: var(--body-background-button-font-color);
   background-color: var(--button-background-links-color);
 }
@@ -322,10 +342,17 @@ footer {
 
 /*  Container */
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid tomato;
+  display: flex;
+  align-items: center;
 }
