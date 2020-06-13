@@ -17,7 +17,7 @@
   <body>
     <!-- Шапка страницы с навигацией-->
     <header class="page-header">
-      <div class="container">
+      <div class="container header">
         <nav class="header-nav">
           <a class="logo" href="./index.html">
             Web
@@ -28,7 +28,13 @@
               <a href="./index.html" class="link" aria-current="page">Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="link current"
+                aria-current="page"
+              >
+                Портфолио
+              </a>
             </li>
             <li class="item">
               <a href="" class="link">Контакты</a>
@@ -190,47 +196,57 @@
     </main>
     <!-- Подвал страницы -->
     <footer>
-      <a class="logo" href="./index.html">
-        Web
-        <span class="in-footer">Studio</span>
-      </a>
-      <address>
-        <ul class="address-links">
-          <li>
-            <a class="address" href="https://goo.gl/maps/L6xQnXcVUkstuExL9"
-              >г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </li>
-          <li>
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11 </a>
-          </li>
-        </ul>
-      </address>
-      <span class="footer-text"><b>присоединяйтесь</b></span>
-      <ul class="footer social-links">
-        <li>
-          <a class="social-links" href="https://www.instagram.com/">
-            Instagram
+      <div class="container for-footer">
+        <div class="container-address">
+          <a class="logo" href="./index.html">
+            Web
+            <span class="in-footer">Studio</span>
           </a>
-        </li>
-        <li>
-          <a class="social-links" href="https://twitter.com/">Twitter</a>
-        </li>
-        <li>
-          <a class="social-links" href="https://www.facebook.com/">Facebook</a>
-        </li>
-        <li>
-          <a class="social-links" href="https://www.linkedin.com/">LinkedIn</a>
-        </li>
-      </ul>
-      <span class="footer-text"><b>Подпишитесь на рассылку</b></span>
-      <a class="button primary" href="">Подписаться</a>
-      <p class="developed-by">2020 | Developed by GoIT Students</p>
+          <address class="address-box">
+            <ul class="address-links">
+              <li class="address-item">
+                <a class="address" href="https://goo.gl/maps/L6xQnXcVUkstuExL9"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="address-item">
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="address-item">
+                <a class="link" href="tel:+380961111111">+38 096 111 11 11 </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="container-social">
+          <span class="footer-text"><b>присоединяйтесь</b></span>
+          <ul class="footer social-links">
+            <li class="social-item">
+              <a class="social-links" href="https://www.instagram.com/">
+                Inst.
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-links" href="https://twitter.com/">Twit.</a>
+            </li>
+            <li class="social-item">
+              <a class="social-links" href="https://www.facebook.com/">Face.</a>
+            </li>
+            <li class="social-item">
+              <a class="social-links" href="https://www.linkedin.com/">Link.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-form">
+          <span class="footer-text"><b>Подпишитесь на рассылку</b></span>
+          <a class="button primary" href="">Подписаться</a>
+        </div>
+      </div>
+      <div class="container-author">
+        <p class="developed-by">2020 | Developed by GoIT Students</p>
+      </div>
     </footer>
   </body>
 </html>
