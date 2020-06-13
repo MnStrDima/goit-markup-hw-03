@@ -116,6 +116,15 @@ body {
   line-height: 1.71;
   list-style-type: none;
   text-decoration: none;
+  text-align: start;
+
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.address-item:not(:first-child) {
+  margin-top: 9px;
 }
 
 .address {
@@ -129,8 +138,10 @@ body {
 }
 
 .footer-text {
+  display: block;
   font-weight: 700;
   line-height: 16px;
+  text-align: left;
   text-transform: uppercase;
   color: var(--body-background-button-font-color);
 }
@@ -138,7 +149,17 @@ body {
 .footer.social-links {
   list-style: none;
   text-decoration: none;
+  padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: start;
 }
+
+.footer.social-links .social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
 .footer .social-links:hover,
 .footer .social-links:focus {
   color: var(--button-background-links-color);
@@ -150,6 +171,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*Кнопка*/
@@ -175,7 +198,6 @@ body {
 
 .hero {
   text-align: center;
-  outline: 1px solid red;
 }
 
 .hero-title {
@@ -252,7 +274,7 @@ body {
   align-items: center;
 }
 
-.container-works .section-list {
+.container.works .section-list {
   list-style: none;
   display: flex;
   padding-left: 0;
@@ -261,7 +283,16 @@ body {
   align-items: center;
 }
 
-.container-team .section-list {
+.container.team .section-list {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.container.clients .section-list {
   list-style: none;
   display: flex;
   padding-left: 0;
@@ -272,6 +303,10 @@ body {
 
 .section-list .item {
   min-width: 270px;
+}
+
+.section-list.clients .item {
+  min-width: 170px;
 }
 
 .section-list .item:not(:first-child) {
@@ -302,7 +337,7 @@ body {
 }
 
 .mate .mate-item:not(:first-child) {
-  margin-left: 22px;
+  margin-left: 10px;
 }
 
 .social-links {
@@ -325,7 +360,7 @@ body {
 
 /* DELETE THIS AFTER MODIFICATION */
 footer {
-  background-color: #000000;
+  background: #2f303a;
 }
 /* DELETE THIS AFTER MODIFICATION */
 
@@ -402,6 +437,11 @@ footer {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.team-section {
+  background: #f5f4fa;
 }
 
 .container {
@@ -409,7 +449,15 @@ footer {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  align-items: center;
+  text-align: center;
+}
+
+.container.header {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -420,28 +468,75 @@ footer {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.container-works {
+.container.works {
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
-.container-team {
+.container.team {
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
-.container-team .item {
+.container.clients {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container.for-footer {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.container-address {
+  display: flex;
+  flex-direction: column;
+  min-width: 69px;
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+.address-box {
+  margin-top: 8px;
+}
+
+.container-social {
+  min-width: 206px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 57px;
+  margin-left: 69px;
+}
+
+.container-form {
+  margin-left: auto;
+  margin-right: 0;
+  min-width: 570px;
+  padding-top: 57px;
+}
+
+.container-author {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 18px;
+  padding-bottom: 21px;
   align-items: center;
+  text-align: center;
 }
