@@ -194,6 +194,9 @@ body {
   background-color: var(--button-background-links-color);
 }
 
+.container-form > .button.primary {
+  margin-top: 20px;
+}
 /*Герой*/
 
 .hero {
