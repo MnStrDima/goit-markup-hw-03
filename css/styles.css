@@ -545,6 +545,7 @@ footer {
   padding-right: 15px;
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .container-address {
@@ -564,11 +565,9 @@ footer {
   display: flex;
   flex-direction: column;
   padding-top: 57px;
-  margin-left: 69px;
 }
 
 .container-form {
-  margin-left: auto;
   margin-right: 0;
   min-width: 570px;
   padding-top: 57px;
