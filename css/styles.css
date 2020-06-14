@@ -35,6 +35,10 @@ body {
   text-decoration: none;
   margin-right: 85px;
 }
+.logo.for-footer {
+  margin-right: 0;
+  text-align: start;
+}
 
 .logo .in-header {
   color: #000000;
@@ -545,7 +549,6 @@ footer {
   padding-right: 15px;
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 
 .container-address {
@@ -565,10 +568,12 @@ footer {
   display: flex;
   flex-direction: column;
   padding-top: 57px;
+  margin-left: 69px;
 }
 
 .container-form {
   margin-right: 0;
+  margin-left: 94px;
   min-width: 570px;
   padding-top: 57px;
 }
