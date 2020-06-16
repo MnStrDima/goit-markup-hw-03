@@ -49,6 +49,10 @@ body {
 }
 /* Навигация сайта*/
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .site-navigation {
   list-style-type: none;
   margin-top: 0;
@@ -63,8 +67,9 @@ body {
 
 .site-navigation .link {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 29px;
   display: block;
+  border-bottom: 4px solid transparent;
 
   font-weight: 500;
   line-height: 1.14;
@@ -76,10 +81,12 @@ body {
 .site-navigation .link:hover,
 .site-navigation .link:focus {
   color: var(--button-background-links-color);
+  border-bottom: 4px solid var(--button-background-links-color);
 }
 
 .site-navigation .current {
   color: var(--button-background-links-color);
+  border-bottom: 4px solid var(--button-background-links-color);
 }
 
 /*Контакты в хедере*/
@@ -359,6 +366,11 @@ body {
   border-radius: 4px;
 }
 
+.section-list.clients .item:hover,
+.section-list.clients .item:focus {
+  border: 1px solid var(--button-background-links-color);
+}
+
 .section-list .item:not(:first-child) {
   margin-left: 30px;
 }
@@ -392,6 +404,9 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .mate-item {
@@ -469,8 +484,17 @@ footer {
 
 /*Портфолио*/
 
-.main-title {
-  display: none;
+.main-title.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .portfolio-list {
@@ -506,6 +530,12 @@ footer {
 .portfolio-link {
   text-decoration: none;
   display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list .subtitle {
@@ -653,6 +683,7 @@ footer {
   padding-bottom: 21px;
   align-items: center;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .main-section {
